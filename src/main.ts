@@ -6,9 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors({
     origin: [
-      'http://localhost:3000',
-      'https://your-vercel-app.vercel.app',
-      'https://backend-machine-monitoring-dashboard.onrender.com'
+      "*"
     ],
     credentials: true,
   });
