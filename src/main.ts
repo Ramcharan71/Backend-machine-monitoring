@@ -7,7 +7,8 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'http://localhost:3000',
-      'https://your-vercel-app.vercel.app'
+      'https://your-vercel-app.vercel.app',
+      'https://backend-machine-monitoring-dashboard.onrender.com'
     ],
     credentials: true,
   });
