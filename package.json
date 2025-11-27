@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "nest build",
-    "postbuild": "copy src\\machines\\data.json dist\\machines\\data.json",
+    "postbuild": "mkdir -p dist/machines && cp src/machines/data.json dist/machines/data.json",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
