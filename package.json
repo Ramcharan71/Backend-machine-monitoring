@@ -5,6 +5,7 @@
   "author": "Your Name",
   "private": true,
   "license": "MIT",
+  "publishDir": "dist",
   "scripts": {
     "build": "nest build",
     "postbuild": "mkdir -p dist/machines && cp src/machines/data.json dist/machines/data.json",
